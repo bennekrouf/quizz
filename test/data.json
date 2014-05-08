@@ -1,0 +1,42 @@
+[
+
+	{
+		type: "radioStyle"
+		,label: "Which is not an advantage of using a closure?"
+		,answers: [{id: "A", text: "Prevent pollution of global scope", right:true}
+					, {id:"B", text: "Encapsulation", right:false}
+					, {id:"C", text: "Private properties and methods", right:false}
+					, {id:"D", text: "Allow conditional use of ‘strict mode’", right:false}
+					]
+	}
+	,{
+		type: "radioStyle"
+		,label: "To create a columned list of twoline email subjects and dates for a masterdetail view, which are the most semantically correct?"
+		,answers: [
+					{id: "A", text: "<div>+<span>", right:true}
+					, {id:"B", text: "<tr>+<td>", right:false}
+					, {id:"C", text: "<ul>+<li>", right:false}
+					, {id:"D", text: "<p>+<br>", right:false}
+					, {id:"E", text: "none of these", right:false}
+					, {id:"F", text: "all of these", right:false}						
+					]
+	}
+	,{
+		type: "radioStyle"
+		,label: "To pass an array of strings to a function, you should not use..."
+		,answers: [
+					{id: "A", text: "fn.apply(this, stringsArray)", right:true}
+					, {id:"B", text: "fn.call(this, stringsArray)", right:false}
+					, {id:"C", text: "fn.bind(this, stringsArray)", right:false}						
+					]
+	}
+	,{
+		type: "textStyle"
+		,answers: [
+				{response:true, right: "<ul>"}
+				,{response:false, text: " and "} 
+				,{response:true, right: "<li>"}
+				,{response:false, text: " would be the HTML tags you would use to display a menu item and its description."}
+		] 
+	}
+]

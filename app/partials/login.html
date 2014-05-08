@@ -1,0 +1,19 @@
+<div class="col-centered login-block">
+
+	<div novalidate ng-form name="formRow">
+			<input type="email" class="form-control" name="email" ng-model="login.email" 
+					required placeholder="Email">
+
+			<span class="error" ng-show="formRow.email.$error.required">Tell us your email.</span>
+			<span class="error" ng-show="formRow.email.$error.email">Email not valid</span><br>
+
+			<input type="password" class="form-control" name="password" ng-model="login.password" 
+					required placeholder="Password">
+
+			<span class="error" ng-show="formRow.password.$error.required">Tell us your password.</span><br><br>
+					
+			<button type="submit" ng-click="register()" class="btn btn-primary btn-block" 
+						ng-disabled="formRow.$invalid">Register</button><br><br>
+	</div>
+
+</div>

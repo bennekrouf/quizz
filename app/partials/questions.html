@@ -1,0 +1,39 @@
+<div class="col-centered">
+	<div class="container">
+		<span ng-show="currentQuestion.question.type === 'radioStyle'">
+			<h3>{{currentQuestion.compteur}}. {{currentQuestion.question.label}}</h3><br><br><br><br>
+		</span>
+	</div>
+
+	<div novalidate class="form-horizontal question-block" ng-form name="questionForm">
+		<div ng-switch on="currentQuestion.question.type">
+
+		 	 <div ng-switch-when="radioStyle">
+				<div ng-repeat="choices in currentQuestion.question.answers">
+					<label>
+						<input type="radio" name="radio" id="choiceId" required />{{choices.id}}. {{choices.text}}
+					</label>
+			 	 </div>
+		 	 </div>
+
+		 	<div ng-switch-when="textStyle">
+				<span ng-show="currentQuestion.question.type === 'radioStyle'">
+					{{currentQuestion.compteur}}. 
+				</span>
+
+			 	<div ng-repeat="fragment in currentQuestion.question.answers">
+			 		<span ng-show="fragment.response">
+			 			<input type="text" name="fragment" id="input" class="form-control" required />
+			 		</span>
+			 		<span ng-show="!fragment.response">
+			 			{{fragment.text}} 
+			 		</span>
+			 	</div>
+			</div>
+
+		 </div>
+	</div>
+
+<button type="submit" class="btn btn-primary btn-block" ng-disabled="questionForm.radio.$invalid" ng-click="continue()">Continue</button>
+
+</div>

@@ -1,0 +1,17 @@
+<div class="col-centered">
+	
+	<nav class="navbar" role="navigation">
+
+		<span ng-hide="login.registered">
+			<a class="navbar-brand" href="/">Login</a>
+			<a class="navbar-brand" href="/">Register</a>
+		</span>
+		
+		<span ng-show="login.registered">
+			<a class="navbar-text">Hi, {{login.email}} </a>  
+			<a class="navbar-brand" href="/" ng-click="logout()">Logout</a>  
+		</span>
+
+	</nav>
+
+</div>

@@ -1,0 +1,146 @@
+.img-thumbnail {  
+  display: inline-block;  
+  height: auto;  
+  max-width: 100%;  
+  padding: 4px;  
+  line-height: 1.428571429;  
+  background-color: #ffffff;  
+  border: 1px solid #dddddd;  
+  border-radius: 4px;  
+  -webkit-transition: all 0.2s ease-in-out;  
+          transition: all 0.2s ease-in-out;  
+}
+
+
+html, body, .container {
+    height: 100%;
+}
+.container {
+    display: table;
+    vertical-align: middle;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.question-block {
+  background: rgb(233, 233, 233);
+  color : #F7F5F5;
+
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+
+  
+  
+}
+
+.login-block {
+  background: rgb(233, 233, 233);
+  color : #F7F5F5;
+}
+
+.login-block .error {
+  color : #C52525;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+
+
+
+input.ng-invalid, select.ng-invalid{
+  border: solid 2px #f00;
+}
+
+field-radius {
+  border-radius: 100px; 
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
+.container {
+  width: 1000px;
+}
+
+
+
+.login-block .btn-primary:hover,
+ .login-block .btn-primary:focus,
+  .login-block .btn-primary:active,
+   .login-block .btn-primary.active,
+    .login-block .open .dropdown-toggle.btn-primary {
+  color: #ffffff; 
+  background-color: #9A0DA0; 
+  border-color: #9A0DA0; 
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+}
+
+.navbar, .navbar-brand, .navbar-text {
+  display: inline-block;
+  float: none;
+  text-align: center;
+}
+
+
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input[type=radio]:checked + label { 
+   background-image: none;
+    background-color:#d0d0d0;
+}
+
+
+/* animations */
+.view-enter, .view-leave {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 5s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 5s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 5s;
+}
+
+.view-enter {
+  opacity:0;
+  left:100px;
+  width:100%;
+  position:absolute;
+}
+.view-enter.view-enter-active {
+  left:0;
+  opacity:1;
+}
+
+.view-leave {
+  position:absolute;
+  left:0;
+  width:100%;
+  opacity:1;
+}
+.view-leave.view-leave-active {
+  left:-100px;
+  opacity:0;
+}
+
+
+/* alignement text et radio button */
+input[type="radio"]{
+    vertical-align: baseline;
+}
